@@ -1,11 +1,19 @@
 package applicationSensor;
 
-import dados.Sensor;
-public class SensorResgistra {
+import dados.sensorDados;
 
+public class SensorResgistra extends sensorDados{
+	
 	public static void main(String[] args) {
 		
-		Sensor temperatura = new Sensor();
-		temperatura.sensoTemperatura();
+		sensorDados temperatura = new sensorDados();
+		temperatura.sensorTemperatura();
+
+		sensorDados umidade = new sensorDados();
+		umidade.sensorUmidade();
+		
+		sensorDados gasCarbonico = new sensorDados();
+		gasCarbonico.sensorGasCarbonico();
 	}
+	
 }
